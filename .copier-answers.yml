@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier
+_commit: v0.2.0
+_src_path: gh:alan-turing-institute/python-project-template
+coc: our_coc
+email: eddableheath@gmail.com
+full_name: Edmund Dable-Heath
+license: MIT
+min_python_version: '3.10'
+org: eddableheath
+project_name: Voronoi Cell Visuals
+project_short_description: Creates visuals based on depth within images, creating
+    voronoi cells with greater resolution for closer parts of the frame.
+python_name: vor-cell-vis
+typing: no_typing
+url: https://github.com/eddableheath/voronoi_cell_visuals
