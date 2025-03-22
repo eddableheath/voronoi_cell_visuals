@@ -3,14 +3,14 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Voronoi Cell Visuals"
+name = "vor_cell_vis"
 version = "0.1.0"
 authors = [
   { name = "Edmund Dable-Heath", email = "eddableheath@gmail.com" },
 ]
 description = "Creates visuals based on depth within images, creating voronoi cells with greater resolution for closer parts of the frame."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 classifiers = [
   "Development Status :: 1 - Planning",
   "Intended Audience :: Science/Research",
@@ -27,7 +27,9 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-  "transformers"
+  "transformers",
+  "pillow",
+  "numpy"
 ]
 
 [project.optional-dependencies]
