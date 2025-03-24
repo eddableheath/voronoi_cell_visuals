@@ -96,6 +96,8 @@ def gen_vor_image(
     plt.axis("scaled")
     ax.set_ylim(0, norm_avg.shape[0] * filter_size)
     ax.set_xlim(0, norm_avg.shape[1] * filter_size)
+    ax.set_frame_on(False)
+    fig.tight_layout()
 
     # sample rgb values and colour polygons:
     for r in range(len(vor.point_region)):
