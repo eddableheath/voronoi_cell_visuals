@@ -160,3 +160,4 @@ Thumbs.db
 # local stuff
 data
 notebooks
+go_voronoi/go_voronoi/data
