@@ -5,11 +5,29 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 )
 
 
 func main() {
+	// Command line flags for testing
+	testGPU := flag.Bool("gpu-test", false, "Test OpenGL GPU setup")
+	testMetal := flag.Bool("metal-test", false, "Test Metal GPU setup (macOS/Apple Silicon)")
+	flag.Parse()
+
+	if *testGPU {
+		fmt.Println("🚀 Running OpenGL GPU setup test...")
+		TestGPUSetup()
+		return
+	}
+
+	if *testMetal {
+		fmt.Println("🚀 Running Metal GPU setup test...")
+		TestMetalSetup()
+		return
+	}
+
 	fmt.Println("Starting Voronoi cone generation test...")
 
 	// Create some test points with different spacings
